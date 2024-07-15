@@ -1,0 +1,75 @@
+.titlePage {
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titleTitle {
+    display: flex;
+    color: #5D5D5D;
+    width: 300px;
+    height: 155px;
+    font-size: 35px;
+    font-family: Iceberg;
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 4vh;
+    text-shadow: 2px 2px 10px #FCEBF3;
+}
+
+.titleSubtitle {
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 25px;
+    font-family: Iceberg;
+    font-size: 17px;
+    background-color: #D9D9D9;
+    width: 379px;
+    text-align: center;
+    mix-blend-mode: multiply;
+}
+
+.priceContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+}
+
+.priceBlock {
+    font-size: 20px;
+    color: #8B1A35;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-family: Irish Grover;
+}
+
+.priceOld {
+    font-family: Iceberg;
+    color: #F1305E;
+    font-size: 20px;
+    margin-left: 50%;
+    margin-top: -7px;
+}
+
+.buyButton {
+    line-height: 1.5;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Ubuntu;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    background-color: #FCEBF3;
+}

@@ -1,0 +1,24 @@
+.mainButton {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 50px;
+    background-color: #CBC7C8;
+    border-radius: 30px;
+}
+
+.pinkButton {
+    text-align: center;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #E82E81;
+    width: 350px;
+    height: 30px;
+    border-radius: 30px;
+    font-family: Kavivanar;
+    outline: none;
+    border: none;
+}
+
