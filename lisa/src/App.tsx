@@ -5,6 +5,7 @@ import IntroPage from './ui/introPage/IntroPage';
 import ForWhoPage from './ui/forWhoPage/ForWhoPage';
 import ProgramPage from './ui/programPage/ProgramPage';
 import PromisePage from './ui/promisePage/PromisePage';
+import FeedbackPage from './ui/feedbackPage/FeedbackPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ForWhoPage />
       <ProgramPage />
       <PromisePage />
+      <FeedbackPage />
       <MainButton />
     </div>
   );
