@@ -13,7 +13,7 @@ function App() {
       <IntroPage />
       <ForWhoPage />
       <ProgramPage />
-      {/* <PromisePage /> */}
+      <PromisePage />
       <MainButton />
     </div>
   );
