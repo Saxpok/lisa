@@ -10,7 +10,7 @@ const MainButton = () => {
             if (window.scrollY > 10) {
                 setMarginTop('93vh');
             } else {
-                setMarginTop('64vh');
+                setMarginTop('540px');
             }
         };
 
