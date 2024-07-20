@@ -57,6 +57,18 @@
     margin-top: -7px;
 }
 
+@keyframes colorChange {
+    0% {
+        color: #8B1A35;
+    }
+    50% {
+        color: #E06D6D;
+    }
+    100% {
+        color: #8B1A35;
+    }
+}
+
 .buyButton {
     line-height: 1.5;
     padding-left: 25px;
@@ -72,4 +84,5 @@
     width: 100px;
     height: 60px;
     background-color: #FCEBF3;
+    animation: colorChange 2s linear infinite;
 }

@@ -4,6 +4,7 @@ import MainButton from './ui/mainButton/MainButton';
 import IntroPage from './ui/introPage/IntroPage';
 import ForWhoPage from './ui/forWhoPage/ForWhoPage';
 import ProgramPage from './ui/programPage/ProgramPage';
+import PromisePage from './ui/promisePage/PromisePage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <IntroPage />
       <ForWhoPage />
       <ProgramPage />
+      {/* <PromisePage /> */}
       <MainButton />
     </div>
   );
