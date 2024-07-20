@@ -8,6 +8,7 @@
     color: #FFFFFF;
     font-family: Concert One;
     margin-bottom: 20px;
+    transition: all 0.5s ease;
 }
 
 .question {
