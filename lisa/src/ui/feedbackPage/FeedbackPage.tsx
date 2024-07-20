@@ -1,3 +1,13 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules'
+
+import feedback1 from './fb1.png'
+import feedback2 from './fb2.png'
+import feedback3 from './fb3.png'
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 import './FeedbackPage.style.css'
 import Question from './question/Question'
 
@@ -23,7 +33,41 @@ const FeedbackPage = () => {
                 Що кажуть викладачі після проходження курсу:
             </div>
             <div className='feedbackSlides'>
-
+                <Swiper 
+                pagination={true} 
+                modules={[Pagination]} 
+                className="mySwiper">
+                    <SwiperSlide>
+                        <div 
+                        className='slide'
+                        style={{
+                            backgroundImage: `url(${feedback2})`,
+                            backgroundSize: 'cover'
+                        }}
+                        >
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div 
+                        className='slide'
+                        style={{
+                            backgroundImage: `url(${feedback1})`,
+                            backgroundSize: 'cover'
+                        }}
+                        >
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div 
+                        className='slide'
+                        style={{
+                            backgroundImage: `url(${feedback3})`,
+                            backgroundSize: 'cover'
+                        }}
+                        >
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
             </div>
             <div className='questions'>
                 {
