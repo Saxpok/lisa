@@ -66,8 +66,8 @@ const ForWhoPage = () => {
                 Цей курс точно для тебе, якщо ти...
             </div>
             {
-            features.map((feature) => 
-                <div className="feature">
+            features.map((feature, i) => 
+                <div key={i} className="feature">
                     <div
                         className="featureImage"
                         style={{

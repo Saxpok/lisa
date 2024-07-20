@@ -1,7 +1,8 @@
 import Program, { ProgramProps } from './program/Program'
 import './ProgramPage.style.css'
 import gift from "./gift.png"
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { useInView } from 'react-intersection-observer'
 
 interface Program {
     content: string
@@ -42,23 +43,37 @@ const programs : Program[] = [
 
 const ProgramPage = () => {
 
-    const [done, setDone] = useState(false)
+    const [scrolled, setScrolled] = useState(false)
+
+    const { ref, inView, entry } = useInView({
+        threshold: 0.1
+    })
+
+    useEffect(() => {   
+        if(inView) {
+            setScrolled(true)
+        }
+    }, [inView])
 
     return (
         <div className="programPage">
-            <div className="programTitle">
+            <div ref={ref} className="programTitle">
                 Програма курсу:
             </div>
+            <div className='programs'>
             {
-                programs.map((item, i) => 
+                scrolled && programs.map((item, i) => 
                     <Program 
                     content={item.content}
                     position={i}
+                    key={i}
                     />
                 )
             }
+            </div>
             <div className="gift">
                 <div
+                    className='giftImg'
                     style={{
                         backgroundImage: `url(${gift})`,
                         height: '70px',

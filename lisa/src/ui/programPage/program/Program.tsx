@@ -15,7 +15,7 @@ const Program = ({content, position} : ProgramProps) => {
         setTimeout(() => {
             setCureentContent(content)
             setCurrentStatus(true)
-        }, 1500 + position * 1000)
+        }, 500 + position * 1000)
     }, [])
 
     return (

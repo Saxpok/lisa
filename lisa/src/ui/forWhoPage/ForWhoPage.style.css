@@ -27,16 +27,30 @@
 
 .feature {
     width: 90%;
+    height: 22vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
+@keyframes featureRotation {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
 .featureImage {
     background-size: cover;
     height: 20vw;
     width: 20vw;
+    animation: featureRotation 3s linear infinite;
 }
 
 .featureDescription {
