@@ -1,6 +1,5 @@
 .promisePage {
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,10 +35,13 @@
 }
 
 .promisePageDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
     text-align: center;
     margin-top: 5px;
     font-family: Open Sans;
     font-size: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 40px;
 }

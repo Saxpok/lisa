@@ -3,7 +3,7 @@ import "./MainButton.style.css";
 import { makePurchase } from "../../api/buyRequest/buyRequest";
 
 const MainButton = () => {
-    const [marginTop, setMarginTop] = useState('64vh')
+    const [marginTop, setMarginTop] = useState('540px')
 
     useEffect(() => {
         const handleScroll = () => {

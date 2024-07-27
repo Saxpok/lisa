@@ -14,7 +14,7 @@ import Question from './question/Question'
 const questions = [
     {
         question: 'Якщо я ніколи не викладала(в), для мене це актуально?',
-        ansver: 'subtext subtext subtext subtext subtext subtext subtext subtext subtext subtext subtext'
+        ansver: 'Цей курс - знайомство з професією викладача математики, тому звісно актуальний для вас, якщо ви ніколи не викладали'
     }, 
     {
         question: 'Якщо мені не сподобається і я не знайду для себе це цікавим, ви повернете кошти?',
