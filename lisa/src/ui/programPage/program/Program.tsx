@@ -23,10 +23,11 @@ const Program = ({content, position} : ProgramProps) => {
         className="progContainer"
         style={{
             justifyContent: (position % 2 === 0) ? "flex-start" : "flex-end",
-            opacity: (position % 2 === 0) ? "100%" : "70%"
+            opacity: (position % 2 === 0) ? "100%" : "90%"
         }}
         >
-            <div className={currentStatus ? "progTitle" : "loading"}>
+            <div
+            className={currentStatus ? "progTitle" : "loading"}>
                 {currentContent}
             </div>
             

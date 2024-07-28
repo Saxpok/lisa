@@ -8,7 +8,7 @@ interface Program {
     content: string
 }
 
-const programs : Program[] = [
+const programs: Program[] = [
     {
         content: 'Технічна частина репетиторства (Що потрібно викладачу для якісного проведення уроку)'
     },
@@ -49,8 +49,8 @@ const ProgramPage = () => {
         threshold: 0.1
     })
 
-    useEffect(() => {   
-        if(inView) {
+    useEffect(() => {
+        if (inView) {
             setScrolled(true)
         }
     }, [inView])
@@ -60,16 +60,33 @@ const ProgramPage = () => {
             <div ref={ref} className="programTitle">
                 Програма курсу:
             </div>
+            <div className='programUnderLine'>
+                <svg 
+                width="341" 
+                height="2" 
+                viewBox="0 0 341 2" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg">
+                    <line 
+                    y1="1" 
+                    x2="341" 
+                    y2="1" 
+                    stroke="#F1305E" 
+                    strokeOpacity="0.3" 
+                    strokeWidth="2" />
+                </svg>
+
+            </div>
             <div className='programs'>
-            {
-                scrolled && programs.map((item, i) => 
-                    <Program 
-                    content={item.content}
-                    position={i}
-                    key={i}
-                    />
-                )
-            }
+                {
+                    scrolled && programs.map((item, i) =>
+                        <Program
+                            content={item.content}
+                            position={i}
+                            key={i}
+                        />
+                    )
+                }
             </div>
             <div className="gift">
                 <div
@@ -83,8 +100,8 @@ const ProgramPage = () => {
                 >
                 </div>
                 <div className='giftTitle'>
-                    Бонус у вигляді переліку сайтів та збірників 
-                    необхідних для будь якого віку 
+                    Бонус у вигляді переліку сайтів та збірників
+                    необхідних для будь якого віку
                 </div>
             </div>
         </div>

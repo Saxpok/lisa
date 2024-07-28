@@ -8,13 +8,13 @@
 
 .introTitle {
     text-align: center;
-    font-family: Bellota Text;
+    font-family: Brygada-1918;
     font-size: 32px;
 }
 
 .introSubTitle {
     margin-top: 5px;
-    font-family: Bellota Text;
+    font-family: Bellota-Text;
     font-size: 14px;
 }
 
@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Bellota Text;
+    font-family: Bellota-Text;
     font-size: 14px;
     text-align: center;
     width: 95%;

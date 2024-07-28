@@ -71,8 +71,9 @@ const FeedbackPage = () => {
             </div>
             <div className='questions'>
                 {
-                    questions.map((item) => 
+                    questions.map((item, i) => 
                         <Question 
+                        key={i}
                         question={item.question}
                         ansver={item.ansver}
                         />
