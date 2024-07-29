@@ -1,0 +1,42 @@
+.demoPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.demoTitle {
+    margin-top: 50px;
+    color: #726963;
+    font-size: 24px;
+    line-height: 1.7;
+    text-align: center;
+    font-family: Comfortaa;
+}
+
+.demoSample {
+    margin-top: 30px;
+    height: 180px;
+    width: 320px;
+    background-size: cover;
+}
+
+.sampleTitle {
+   color: #422D21;
+   font-size: 18px; 
+   font-family: Kurale;
+   margin-top: 3px;
+}
+
+.demoOffer {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 340px;
+    height: 90px;
+    border-radius: 25px;
+    background-color: #FCEBF3;
+    font-size: 18px;
+    font-family: Kurale;
+}
