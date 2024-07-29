@@ -7,8 +7,31 @@ import ProgramPage from './ui/programPage/ProgramPage';
 import PromisePage from './ui/promisePage/PromisePage';
 import FeedbackPage from './ui/feedbackPage/FeedbackPage';
 import DemoPage from './ui/demoPage/DemoPage';
+import Footer from './ui/footer/Footer';
+import { useEffect, useState } from 'react';
+
 
 function App() {
+
+  const [isFooterVisible, setIsFooterVisible] = useState(false);
+
+    const handleScroll = () => {
+        const windowHeight = window.innerHeight;
+        const fullHeight = document.documentElement.scrollHeight;
+        const scrollPosition = window.scrollY + windowHeight;
+
+        if (scrollPosition >= fullHeight + 175) {
+            setIsFooterVisible(true);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
   return (
     <div className="App">
       <TitlePage />
@@ -18,7 +41,8 @@ function App() {
       <ProgramPage />
       <PromisePage />
       <FeedbackPage />
-      <MainButton />
+      {isFooterVisible ? <></> : <MainButton />}
+      <Footer isFooterVisible={isFooterVisible} />
     </div>
   );
 }

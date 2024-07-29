@@ -46,7 +46,7 @@ const ProgramPage = () => {
     const [scrolled, setScrolled] = useState(false)
 
     const { ref, inView, entry } = useInView({
-        threshold: 0.1
+        threshold: 1
     })
 
     useEffect(() => {

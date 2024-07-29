@@ -1,0 +1,26 @@
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #1B1C1E;
+    transition: all 1s ease;
+    border-radius: 0 0 63px 63px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-family: Iceberg;
+}
+
+.footerHidden {
+    height: 10px;
+    width: 100%;
+    display: none;
+}
+.footerDescription {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
