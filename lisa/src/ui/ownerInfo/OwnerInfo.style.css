@@ -1,0 +1,21 @@
+.ownerInfo {
+    width: 100%;
+    height: 80px;
+    background-color: #1B1C1E;
+    transition: all 1s ease;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-family: Montserrat;
+    z-index: 2;
+}
+
+.ownerDescription {
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+}

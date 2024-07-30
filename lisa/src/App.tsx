@@ -9,6 +9,7 @@ import FeedbackPage from './ui/feedbackPage/FeedbackPage';
 import DemoPage from './ui/demoPage/DemoPage';
 import Footer from './ui/footer/Footer';
 import { useEffect, useState } from 'react';
+import OwnerInfo from './ui/ownerInfo/OwnerInfo';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       <PromisePage />
       <FeedbackPage />
       {isFooterVisible ? <></> : <MainButton />}
+      <OwnerInfo/>
       <Footer isFooterVisible={isFooterVisible} />
     </div>
   );

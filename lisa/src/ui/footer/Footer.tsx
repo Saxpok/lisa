@@ -8,24 +8,6 @@ interface FooterProps {
 const Footer = ({ isFooterVisible }: FooterProps) => {
     return (
         <>
-            {isFooterVisible ?
-                <div
-                    className="mainButton"
-                    style={{
-                        position: 'relative',
-                        marginBottom: '15px'
-                    }}
-                >
-                    <button
-                        className="pinkButton"
-                        onClick={makePurchase}
-                    >
-                        Придбати зі знижкою 75%
-                    </button>
-                </div>
-                :
-                <></>
-            }
             <div
                 className={isFooterVisible ? 'footer' : 'footerHidden'}>
                 <div className='footerDescription'>
@@ -47,7 +29,8 @@ const Footer = ({ isFooterVisible }: FooterProps) => {
                 </div>
                 <div>by Maksym Sviridov # 2024</div>
             </div>
-        </>);
+        </>
+        );
 };
 
 export default Footer;
