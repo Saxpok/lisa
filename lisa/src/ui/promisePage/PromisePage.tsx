@@ -12,7 +12,7 @@ const PromisePage = () => {
     return (
         <div className="promisePage">
             <div className='promiseTitle'>
-                Лише уяви <span style={{ color: '#F1305E'}}>скільки нового</span> ти будеш вміти після 10 уроків цього курсу
+                Лише уяви <span style={{ color: '#F1305E'}}>скільки нового</span> ти будеш вміти після 7 уроків цього курсу
             </div>
             <div className='promises'>
                 {

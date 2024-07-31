@@ -22,7 +22,7 @@ function App() {
         const scrollPosition = window.scrollY + windowHeight;
 
         if (scrollPosition >= fullHeight + 175) {
-            setIsFooterVisible(true);
+            setIsFooterVisible(!isFooterVisible);
         }
     };
 
@@ -43,7 +43,7 @@ function App() {
       <PromisePage />
       <FeedbackPage />
       {isFooterVisible ? <></> : <MainButton />}
-      <OwnerInfo/>
+      <OwnerInfo isFooterVisible={isFooterVisible}/>
       <Footer isFooterVisible={isFooterVisible} />
     </div>
   );

@@ -14,15 +14,15 @@ const TitlePage = () => {
         з нуля 
       </div>
       <div className="titleSubtitle">
-        Почни викладати вже за 14 днів з експрес курсом та заробляй гроші не виходячи з дому
+        Почни викладати вже за 7 днів з онлайн курсом та заробляй гроші не виходячи з дому
       </div>
       <div className="priceBlock">
         <div className="priceContainer">
             <div className="price">
-                    ВСЬОГО 299 ГРН
+                    ВСЬОГО 399 ГРН
             </div>
             <div className="priceOld">
-                ̶1̶2̶0̶0̶
+                1600
             </div>
             <div 
             className="buyButton"
